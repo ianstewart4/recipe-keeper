@@ -22,7 +22,7 @@ require("./config/passport")(passport);
 connectDB();
 
 //Using EJS for views
-app.set("view engine", "ejs");
+app.set("view engine", "ejs"); // Tells node what templating engine to use
 
 //Static Folder
 app.use(express.static("public"));
