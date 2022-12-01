@@ -16,11 +16,30 @@
               <label for="title" class="form-label">Title</label>
               <input type="text" class="form-control" id="title" name="title">
             </div>
+            <div class="mb-3">
+              <label for="category" class="form-label">Category</label>
+              <select class="form-control" id="category" name="category">
+                <option value="">Select</option>
+                <option value="entree">Entree</option>
+                <option value="main">Main</option>
+                <option value="soup">Soup</option>
+                <option value="side">Side</option>
+                <option value="salad">Salad</option>
+                <option value="dessert">Dessert</option>
+                <option value="drink">Drink</option>
+              </select>
+            </div>
 
             <div>
               <div class="mb-3">
                 <label for="ingredients" class="form-label">Ingredients</label>
-                <textarea class="form-control" id="ingredients" name="ingredients"></textarea>
+                <!-- <ul id="ingList">
+                  <li>1/2 cup porcini mushrooms</li>
+                </ul> -->
+                <div class="d-flex">
+                  <textarea class="form-control" id="ingredients" name="ingredients"></textarea>
+                  <!-- <button class="btn btn-success">+</button> -->
+                </div>
               </div>
               <div class="mb-3">
                 <label for="directions" class="form-label">Directions</label>
@@ -55,6 +74,9 @@
               <a href="/post/<%= posts[i]._id%>">
                 <img class="img-fluid" src="<%= posts[i].image%>">
               </a>
+              <span>
+                <%= posts[i].title%>
+              </span>
             </li>
             <% } %>
         </ul>
