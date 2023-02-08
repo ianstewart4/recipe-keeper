@@ -1,10 +1,20 @@
-# Install
+# Recipe Keeper
+
+## Description
+Users can: 
+- log in 
+- post recipes to the feed
+- view other user's recipes in their feed
+- like posted recipes
+
+
+## Install
 
 `npm install`
 
 ---
 
-# Things to add
+## Things to add
 
 - Create a `.env` file in config folder and add the following as `key = value`
   - PORT = 2121 (can be any port example: 3000)
